@@ -1,0 +1,99 @@
+
+  
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue|Poppins:300,400&display=swap");
+
+
+.container2 {
+  position: relative;
+  width: 1280px;
+  height: 75vh;
+  min-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+ 
+  .page2 {
+    position: absolute;
+    
+    background:linear-gradient(rgba(255, 241, 146,0.8),transparent);
+  background-color:beige;
+    height: 100vh;
+    
+    .row2
+    {
+      
+      margin-top: 200px;
+      text-align: center;
+      &:nth-child(2)
+      {
+        background-color:beige;
+        margin:auto;
+        -webkit-margin-top-collapse:collapse;
+      }
+      
+      &:nth-child(3)
+      {
+        background-color:beige;
+        margin-top:auto;
+        -webkit-margin-top-collapse: separate;
+      }
+      &:nth-child(4)
+      {
+        background-color:beige;
+        margin-top:auto;
+        height: 600px;
+        -webkit-margin-top-collapse: separate;
+      }
+        &:nth-child(5)
+        {
+          background-color:beige;
+          margin-top:auto;
+          height: 600px;
+          -webkit-margin-top-collapse: separate;
+      }
+      .inner2 {
+        display: flex;
+        justify-content: center;
+        margin:auto;
+        
+        
+        h1 {
+          font-family: "Bebas Neue";
+          font-size: 52px;
+          letter-spacing: 0.1rem;
+          
+          .line-wrap {
+            overflow: hidden;
+            height: 66px;
+          }
+        }
+        p {
+          font-family: "Poppins";
+          
+          width: 80%;
+          margin: auto;
+          font-weight: 300;
+          line-height: 24px;
+          font-size: 16px;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+.page-enter {
+  opacity: 0;
+}
+.page-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+  transition-delay: 600ms;
+}
+.page-exit {
+  opacity: 1;
+}
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 400ms;
+}
